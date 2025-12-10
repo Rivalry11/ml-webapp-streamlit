@@ -69,7 +69,7 @@ El usuario ingresa:
 
 Y la app devuelve:
 
-👉 ### Costo estimado del seguro médico
+### 👉  Costo estimado del seguro médico
 
 ### Ejecución local
 
@@ -80,7 +80,7 @@ streamlit run src/app.py
 
 ### URL pública:
 (agrega aquí tu enlace de Render)
-➡️ https://ml-webapp-streamlit-xxxx.onrender.com
+➡️ (https://ml-webapp-streamlit-onzz.onrender.com/)
 
 ## Conclusiones
 
