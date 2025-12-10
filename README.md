@@ -4,11 +4,11 @@ Este proyecto desarrolla un modelo de Machine Learning para predecir el costo de
 
 El objetivo es demostrar un flujo completo de ciencia de datos:
 
-  1 .Exploración y análisis de datos (EDA)
-  2. Entrenamiento y comparación de modelos de regresión
-  3. Selección del mejor modelo y guardado con Pipeline
-  4. Construcción de una aplicación interactiva
-  5. Despliegue en Render para uso en la nube
+  - Exploración y análisis de datos (EDA)
+  - Entrenamiento y comparación de modelos de regresión
+  - Selección del mejor modelo y guardado con Pipeline
+  - Construcción de una aplicación interactiva
+  - Despliegue en Render para uso en la nube
 
 ## Dataset: Medical Insurance Cost
 
