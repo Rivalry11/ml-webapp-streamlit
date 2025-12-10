@@ -47,7 +47,7 @@ Entre los hallazgos principales:
 
 ## Modelo seleccionado
 
-# Random Forest Regressor, por su mejor equilibrio entre:
+### Random Forest Regressor, por su mejor equilibrio entre:
 
   - Precisión (R² alto)
   - Robustez
@@ -56,7 +56,7 @@ Entre los hallazgos principales:
 
 ## Aplicación Web (Streamlit)
 
-# Funcionalidad
+### Funcionalidad
 
 El usuario ingresa:
 
@@ -69,16 +69,16 @@ El usuario ingresa:
 
 Y la app devuelve:
 
-👉 # Costo estimado del seguro médico
+👉 ### Costo estimado del seguro médico
 
-# Ejecución local
+### Ejecución local
 
 streamlit run src/app.py 
 
 
 ## Despliegue en Render
 
-# URL pública:
+### URL pública:
 (agrega aquí tu enlace de Render)
 ➡️ https://ml-webapp-streamlit-xxxx.onrender.com
 
