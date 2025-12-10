@@ -18,10 +18,7 @@ children = st.number_input("Número de hijos", min_value=0, max_value=10, value=
 
 sex = st.selectbox("Sexo", ["male", "female"])
 smoker = st.selectbox("¿Fumador?", ["yes", "no"])
-region = st.selectbox(
-    "Región",
-    ["southwest", "southeast", "northwest", "northeast"]
-)
+region = st.selectbox("Región", ["southwest", "southeast", "northwest", "northeast"])
 
 if st.button("Predecir costo"):
     input_data = np.array([[age, bmi, children, sex, smoker, region]], dtype=object)
