@@ -1,11 +1,18 @@
 import streamlit as st
 import numpy as np
 import pickle
+import os
 
 st.set_page_config(page_title="Medical Insurance Predictor", layout="centered")
 
-# Cargar modelo
-model = pickle.load(open("model.pkl", "rb"))
+# Construir ruta absoluta al model.pkl
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+
+# Cargar el modelo
+with open(MODEL_PATH, "rb") as f:
+    model = pickle.load(f)
+
 
 st.title("💰 Predicción del Costo de Seguro Médico")
 
