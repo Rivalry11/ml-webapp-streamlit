@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import pandas as pd
 import pickle
 import os
 
@@ -12,7 +13,6 @@ MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
 # Cargar el modelo
 with open(MODEL_PATH, "rb") as f:
     model = pickle.load(f)
-
 
 st.title("💰 Predicción del Costo de Seguro Médico")
 
@@ -27,8 +27,17 @@ sex = st.selectbox("Sexo", ["male", "female"])
 smoker = st.selectbox("¿Fumador?", ["yes", "no"])
 region = st.selectbox("Región", ["southwest", "southeast", "northwest", "northeast"])
 
+# === CORRECCIÓN AQUÍ ===
 if st.button("Predecir costo"):
-    input_data = np.array([[age, bmi, children, sex, smoker, region]], dtype=object)
+    input_data = pd.DataFrame([{
+        "age": age,
+        "bmi": bmi,
+        "children": children,
+        "sex": sex,
+        "smoker": smoker,
+        "region": region
+    }])
+
     prediction = model.predict(input_data)[0]
 
     st.success(f"El costo estimado del seguro es: **${prediction:,.2f}**")
